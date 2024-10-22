@@ -1,4 +1,4 @@
-package com.design.patterns.behavioral.bridge;
+package com.design.patterns.structural.bridge;
 
 public class WhatsappProcessor implements NotificationProcessor{
     @Override

@@ -1,15 +1,15 @@
-package com.design.patterns.behavioral.bridge;
+package com.design.patterns.structural.bridge;
 
-public class QRMessage extends NotificationType {
+public class TextMessage extends NotificationType {
     NotificationProcessor notificationProcessor;
 
-    public QRMessage(NotificationProcessor notificationProcessor) {
+    public TextMessage(NotificationProcessor notificationProcessor) {
         this.notificationProcessor = notificationProcessor;
     }
 
     @Override
     public void sendMessage() {
-        System.out.println("Message Type: QR");
+        System.out.println("Message Type: TEXT");
         notificationProcessor.sendNotification();
     }
 }
